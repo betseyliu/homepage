@@ -76,6 +76,15 @@
             <!-- Dropdown Menu -->
 			 
             
+        	<li>
+        		<a class="sb-toggle-submenu">Categories<span class="sb-caret"></span></a>
+            	<ul class="sb-submenu">
+				  	
+				    <li><a href="/categories/技术/" class="animsition-link">技术<small>(1)</small></a></li>
+				    
+				</ul>
+        	</li>
+			
             
         </ul>
         <!-- Lists in Slidebars -->
@@ -151,7 +160,7 @@
                         <p></p>
                         
                         <h2></h2>
-                        <p>每一个不曾起舞的日子，都是对生命的辜负。</p>
+                        <p>生命在于永无止境的折腾。</p>
                         
 
                     </div>
@@ -176,7 +185,7 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2 opening-statement">
                 <div class="col-md-4">
-                    <h3><a href="/2017/05/15/如何完美地给SVG加边框/">如何完美地给SVG加边框</a></h3>
+                    <h3><a href="/2017/05/svg-addstroke/">如何完美地给SVG加边框</a></h3>
                     <span>
                         <span class="post-meta">
       <time datetime="2017-05-15T07:14:40.000Z" itemprop="datePublished">
@@ -185,7 +194,9 @@
     
     
     | 
-    <a href='/tags/SVG-原创/'>SVG 原创</a>
+    <a href='/tags/SVG/'>SVG</a>,
+    
+    <a href='/tags/原创/'>原创</a>
     
     
 </span>
@@ -200,7 +211,7 @@
                     </p>
                     
                     <p class="pull-right readMore">
-                        <a href="/2017/05/15/如何完美地给SVG加边框/">点还是不点...</a>
+                        <a href="/2017/05/svg-addstroke/">点还是不点...</a>
                     </p>
                     
                 </div>
@@ -222,6 +233,9 @@
         </div>
     </div>
 </section>
+
+<!-- ============================ 插入网易云音乐 =========================== -->
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=5163126&auto=1&height=66" style="display:none"></iframe>
 <!-- ============================ END Content =========================== -->
 
       
@@ -275,23 +289,6 @@
 <script src="/js/scripts.js"></script><!-- Theme scripts -->
 
 
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-<script type="text/javascript">
-$('#intro').find('img').each(function(){
-  var alt = this.alt;
-
-  if (alt){
-    $(this).after('<span class="caption" style="display:none">' + alt + '</span>');
-  }
-
-  $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox" rel="gallery" />');
-});
-(function($){
-  $('.fancybox').fancybox();
-})(jQuery);
-</script>
-
 <!-- Initiate flexslider plugin -->
 <script type="text/javascript">
     $(document).ready(function($) {
@@ -316,6 +313,7 @@ $('#intro').find('img').each(function(){
       });
     });
 </script>
+
 
 </body>
 </html>
