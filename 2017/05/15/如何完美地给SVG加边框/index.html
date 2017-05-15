@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]>
+<html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<!--
+***************  *      *     *
+      8          *    *       *
+      8          *  *         *
+      8          **           *
+      8          *  *         *
+      8          *    *       *
+      8          *      *     *
+      8          *        *   ***********    -----Theme By Kieran(http://go.kieran.top)
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+  <title>如何完美地给SVG加边框 | Betsey的小站</title>
+  <!-- Meta data -->
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="Betsey的小站">
+    <meta name="author" content="betseyliu">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicon, (keep icon in root folder) -->
+    <link rel="Shortcut Icon" href="/img/favicon.ico" type="image/ico">
+
+    <link rel="alternate" href="/atom.xml" title="Betsey的小站" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/all.css" media="screen" type="text/css">
+    
+    <link rel="stylesheet" href="/highlightjs/vs.css" type="text/css">
+    
+
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="/css/ie8.css" />
+    <![endif]-->
+
+    <!-- jQuery | Load our jQuery, with an alternative source fallback to a local version if request is unavailable -->
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+
+    <!-- Load these in the <head> for quicker IE8+ load times -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+  
+  
+  
+
+  <style>.col-md-8.col-md-offset-2.opening-statement img{display:none;}</style>
+</head>
+
+<!--
+<body class="post-template">
+-->
+<body id="index" class="lightnav animsition">
+
+      <!-- ============================ Off-canvas navigation =========================== -->
+
+    <div class="sb-slidebar sb-right sb-style-overlay sb-momentum-scrolling">
+        <div class="sb-close" aria-label="Close Menu" aria-hidden="true">
+            <img src="/img/close.png" alt="Close"/>
+        </div>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu">
+            <li><a href="/" class="animsition-link" title="Home">Home</a></li>
+            <li><a href="/archives" class="animsition-link" title="archive">archives</a></li>
+            <!-- Dropdown Menu -->
+			 
+            
+            
+        </ul>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu secondary">
+            <li><a href="/about.html" class="animsition-link" title="about">About</a></li>
+            <li><a href="/atom.xml" class="animsition-link" title="rss">RSS</a></li>
+        </ul>
+    </div>
+    
+    <!-- ============================ END Off-canvas navigation =========================== -->
+
+    <!-- ============================ #sb-site Main Page Wrapper =========================== -->
+
+    <div id="sb-site">
+        <!-- #sb-site - All page content should be contained within this id, except the off-canvas navigation itself -->
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+        <div id="navigation" class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <!-- Nav logo -->
+                    <div class="logo">
+                        <a href="/" title="Logo" class="animsition-link">
+                         <img src="/img/icon.png" alt="Logo" width="35px;"/> 
+                        </a>
+                    </div>
+                    <!-- // Nav logo -->
+                    <!-- Info-bar -->
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="/" class="animsition-link">Betsey的小站</a></li>
+                            <li class="nolink"><span>Always </span>Creative.</li>
+                            
+                            <li><a href="https://github.com/betseyliu" title="Github" target="_blank"><i class="icon-github"></i></a></li>
+                            
+                            
+                            
+                            
+                            
+                            <li><a href="http://weibo.com/u/3967063204" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a></li>
+                            
+                            <li class="nolink"><span>Welcome!</span></li>
+                        </ul>
+                    </nav>
+                    <!--// Info-bar -->
+                </div>
+                <!-- // .container -->
+                <div class="learnmore sb-toggle-right">More</div>
+                <button type="button" class="navbar-toggle menu-icon sb-toggle-right" title="More">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar before"></span>
+                <span class="icon-bar main"></span>
+                <span class="icon-bar after"></span>
+                </button>
+            </div>
+            <!-- // .navbar-inner -->
+        </div>
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+
+      
+<section id="intro">
+    <div class="container">
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2017-05-15T07:14:40.000Z" itemprop="datePublished">
+          2017-05-15
+      </time>
+    
+    
+    | 
+    <a href='/tags/SVG-原创/'>SVG 原创</a>
+    
+    
+</span>
+                <h1>如何完美地给SVG加边框</h1>
+            </div>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+      		<p>在做<a href="https://ppt.baomitu.com" target="_blank" rel="external"><strong>声享</strong></a>项目的时候，遇到了一个比较棘手的问题：有用户反馈说希望可以给形状加边框。</p>
+<p>声享在实现改变形状元素样式的方法，是给 SVG 元素外面包裹着的 div 元素增加样式。<br>比如说当 SVG 元素的 <code>width:100%;height:100%</code>的时候，调整外面包裹的div的宽度和高度就可以修改 SVG 的宽高。<br>同样的来说，修改 div <code>color</code>属性，同时将svg中的样式写成<code>fill:currentColor</code>，就可以继承父元素的<code>color</code>，达到修改形状颜色的目的<br>。<br>这样做可以很方便地修改 SVG 的样式，但是当面对需要<strong>给形状增加边框</strong>这个需求的时候，单纯地为父元素 div 增加 <code>border</code>是不行的，会成为下图的这个效果：<br><img src="https://p1.ssl.qhimg.com/t01f15d7967991871c2.png" alt="给父元素div加boder"></p>
+<p>想要给SVG形状增加边框就必须在SVG上进行修改。<br>当对 SVG 有了一定的研究后，多数人会进行尝试，为 SVG 增加<code>stroke</code>和<code>stroke-width</code>这两个属性。</p>
+<p>但当为 SVG 增加了这两个属性之后，新的问题又出现了：<br>增加的边框跨在了 SVG 形状上，导致有50%的边框超出了SVG形状的最大边缘。下面的这个图中，为 SVG 增加了边框，为了更好地展现边框是跨在形状上，我另外为边框增加了0.5的透明度，<code>style=&quot;stroke:orange;stroke-width:5;stroke-opacity:0.5&quot;</code>。<br><img src="https://p1.ssl.qhimg.com/t01986f88515bb4f921.png" alt="有边框的 SVG "></p>
+<p>可怜的是，SVG无法决定增加的边框的位置，没有inside这种参数选项。</p>
+<p>所以，为了解决这个问题，需要另辟蹊径。比如说，我们可以对SVG的图片进行裁剪，使用<code>clip-path</code>这个属性。</p>
+<p>当在 SVG的<code>&lt;defs&gt;</code>里面定义一个<code>&lt;clipPath&gt;</code>，就为SVG增加了一个裁剪路径。当形状应用这个裁剪路径的时候，我们只能够看到裁剪路径所包含的那部分形状，而裁剪路径以外的形状就被隐藏掉了。实际上就相当于，在这个形状上增加一个镂空的蒙层。</p>
+<p>我们需要为每一个裁剪路径指定一个唯一的<code>id</code>。比如我们需要为这个心形增加一个和它一样形状的裁剪路径就可以这样定义:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;defs&gt;</div><div class="line">    &lt;clipPath id=&quot;heartClip&quot;&gt;</div><div class="line">        // 这个裁剪路径是和下面的心形一样的</div><div class="line">        &lt;path d=&quot;M28.487,10.847C21.13-6.364,0.18-2.348,0.08,17.628C0,33.538,27.699,46.784,28.531,49.636  C29.285,46.675,57,33.785,56.92,17.509C56.823-2.517,35.506-5.678,28.487,10.847z&quot;&gt;</div><div class="line">    &lt;/clipPath&gt;</div><div class="line">&lt;/defs&gt;</div></pre></td></tr></table></figure>
+<p>同时在下面的心形的路径里面增加<code>clip-path=&quot;url(#heartClip)&quot;</code>，这样这个裁剪路径就被应用到了心形上。</p>
+<iframe height="441" scrolling="no" title="SVG-clipPath-heart" src="//codepen.io/betseyliu/embed/NjzpgB/?height=441&theme-id=dark&default-tab=html,result&embed-version=2" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">See the Pen <a href="https://codepen.io/betseyliu/pen/NjzpgB/" target="_blank" rel="external">SVG-clipPath-heart</a> by honeyposy (<a href="http://codepen.io/betseyliu" target="_blank" rel="external">@betseyliu</a>) on <a href="http://codepen.io" target="_blank" rel="external">CodePen</a>.<br></iframe>
+
+<p>可以看到，有一半的边框被裁剪路径裁剪掉了，实际上我们的边框宽度仅为<code>stroke-width</code>的一半。当我们需要增加边框宽度的时候，我们不会改变形状的大小，边框宽度向内增加了，是不是很神奇！？</p>
+<p>这种做法，对于希望为形状的所有区域都增加边框的时候，可以很完美地实现，但是，有些时候，我们只需要为形状的外部增加边框，对于形状内部的部分，我们希望保持原样。</p>
+<p>动动脑筋，我们可以在当前的形状上面增加一个透明不可见的形状，透明形状仅为原形状的外轮廓路径，当我们为这个透明形状增加边框的时候，实际上展现的效果就是为这个形状增加了外围边框。</p>
+<p><iframe height="356" scrolling="no" title="SVG-clipPath-youtube" src="//codepen.io/betseyliu/embed/zwaZeq/?height=356&theme-id=dark&default-tab=html,result&embed-version=2" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">See the Pen <a href="https://codepen.io/betseyliu/pen/zwaZeq/" target="_blank" rel="external">SVG-clipPath-youtube</a> by honeyposy (<a href="http://codepen.io/betseyliu" target="_blank" rel="external">@betseyliu</a>) on <a href="http://codepen.io" target="_blank" rel="external">CodePen</a>.<br></iframe><br>完美！</p>
+
+            <div class="clearfix"></div>
+            <hr class="nogutter">
+        </div>
+        <nav class="pagination" role="pagination">
+    
+    
+</nav>
+
+        <div class="duoshuo">
+
+
+</div>
+    </div>
+</section>
+
+
+      
+<!-- ============================ Footer =========================== -->
+
+<footer>
+    <div class="container">
+            <div class="copy">
+                <p>
+                    &copy; 2014<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Content By betseyliu. All Rights Reserved.
+                </p>
+                <p>Theme By <a href="//go.kieran.top" style="color: #767D84">Kieran</a></p>
+            </div>
+            <div class="social">
+                <ul>
+                    
+                    <li><a href="https://github.com/betseyliu" title="Github" target="_blank"><i class="icon-github"></i></a>&nbsp;</li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="http://weibo.com/u/3967063204" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a>&nbsp;</li>
+                    
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+</footer>
+
+<!-- ============================ END Footer =========================== -->
+      <!-- Load our scripts -->
+<!-- Resizable 'on-demand' full-height hero -->
+<script type="text/javascript">
+    var resizeHero = function () {
+        var hero = $(".cover,.heightblock"),
+            window1 = $(window);
+        hero.css({
+            "height": window1.height()
+        });
+    };
+
+    resizeHero();
+
+    $(window).resize(function () {
+        resizeHero();
+    });
+</script>
+<script src="/js/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load here -->
+<script src="/js/jquery.flexslider-min.js"></script><!-- Flexslider plugin -->
+<script src="/js/scripts.js"></script><!-- Theme scripts -->
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$('#intro').find('img').each(function(){
+  var alt = this.alt;
+
+  if (alt){
+    $(this).after('<span class="caption" style="display:none">' + alt + '</span>');
+  }
+
+  $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox" rel="gallery" />');
+});
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+<!-- Initiate flexslider plugin -->
+<script type="text/javascript">
+    $(document).ready(function($) {
+      (function(){
+        console.log('font');
+        var getCss = function(path) {
+          var head = document.getElementsByTagName('head')[0];
+          link = document.createElement('link');
+          link.href = path;
+          link.rel = 'stylesheet';
+          link.type = 'text/css';
+          head.appendChild(link);
+        };
+        getCss('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+        getCss('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+      })();
+      $('.flexslider').flexslider({
+        animation: "fade",
+        prevText: "",
+        nextText: "",
+        directionNav: true
+      });
+    });
+</script>
+
+</body>
+</html>
