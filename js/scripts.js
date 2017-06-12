@@ -1,6 +1,5 @@
 $(document).ready(function($) {
     "use strict";
-
     $(window).scroll(function () {
         if ($(document).scrollTop() > 10) {
             $(".lightnav .navbar-inner").addClass("lightnav-alt");
