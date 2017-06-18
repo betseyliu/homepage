@@ -170,7 +170,9 @@
         </div>
         <div class="col-md-8 col-md-offset-2">
       		<p>在做<a href="https://ppt.baomitu.com" target="_blank" rel="external"><strong>声享</strong></a>项目的时候，遇到了一个比较棘手的问题：有用户反馈说希望可以给形状加边框。</p>
-<p>声享在实现改变形状元素样式的方法，是给 SVG 元素外面包裹着的 div 元素增加样式。<br>比如说当 SVG 元素的 <code>width:100%;height:100%</code>的时候，调整外面包裹的div的宽度和高度就可以修改 SVG 的宽高。<br>同样的来说，修改 div <code>color</code>属性，同时将svg中的样式写成<code>fill:currentColor</code>，就可以继承父元素的<code>color</code>，达到修改形状颜色的目的<br>。<br>这样做可以很方便地修改 SVG 的样式，但是当面对需要<strong>给形状增加边框</strong>这个需求的时候，单纯地为父元素 div 增加 <code>border</code>是不行的，会成为下图的这个效果：<br><img src="https://p1.ssl.qhimg.com/t01f15d7967991871c2.png" alt="给父元素div加boder"></p>
+<a id="more"></a>
+<p>声享在实现改变形状元素样式的方法，是给 SVG 元素外面包裹着的 div 元素增加样式。<br>比如说当 SVG 元素的 <code>width:100%;height:100%</code>的时候，调整外面包裹的div的宽度和高度就可以修改 SVG 的宽高。<br>同样的来说，修改 div <code>color</code>属性，同时将svg中的样式写成<code>fill:currentColor</code>，就可以继承父元素的<code>color</code>，达到修改形状颜色的目的</p>
+<p>。<br>这样做可以很方便地修改 SVG 的样式，但是当面对需要<strong>给形状增加边框</strong>这个需求的时候，单纯地为父元素 div 增加 <code>border</code>是不行的，会成为下图的这个效果：<br><img src="https://p1.ssl.qhimg.com/t01f15d7967991871c2.png" alt="给父元素div加boder"></p>
 <p>想要给SVG形状增加边框就必须在SVG上进行修改。<br>当对 SVG 有了一定的研究后，多数人会进行尝试，为 SVG 增加<code>stroke</code>和<code>stroke-width</code>这两个属性。</p>
 <p>但当为 SVG 增加了这两个属性之后，新的问题又出现了：<br>增加的边框跨在了 SVG 形状上，导致有50%的边框超出了SVG形状的最大边缘。下面的这个图中，为 SVG 增加了边框，为了更好地展现边框是跨在形状上，我另外为边框增加了0.5的透明度，<code>style=&quot;stroke:orange;stroke-width:5;stroke-opacity:0.5&quot;</code>。<br><img src="https://p1.ssl.qhimg.com/t01986f88515bb4f921.png" alt="有边框的 SVG "></p>
 <p>可怜的是，SVG无法决定增加的边框的位置，没有inside这种参数选项。</p>
